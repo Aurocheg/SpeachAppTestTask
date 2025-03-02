@@ -13,6 +13,31 @@
 		DEBFF06D2D7478E60067CA23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBFF06C2D7478E60067CA23 /* Assets.xcassets */; };
 		DEBFF0702D7478E60067CA23 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DEBFF06F2D7478E60067CA23 /* Base */; };
 		DEBFF0792D747BDA0067CA23 /* ImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0782D747BDA0067CA23 /* ImageDTO.swift */; };
+		DEBFF07C2D747DC70067CA23 /* ImageFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF07B2D747DC70067CA23 /* ImageFetchService.swift */; };
+		DEBFF0852D747FCD0067CA23 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = DEBFF0842D747FCD0067CA23 /* Swinject */; };
+		DEBFF0872D747FCD0067CA23 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DEBFF0862D747FCD0067CA23 /* Swinject-Dynamic */; };
+		DEBFF08A2D747FD60067CA23 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DEBFF0892D747FD60067CA23 /* SnapKit */; };
+		DEBFF08C2D747FD60067CA23 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DEBFF08B2D747FD60067CA23 /* SnapKit-Dynamic */; };
+		DEBFF08F2D747FF10067CA23 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DEBFF08E2D747FF10067CA23 /* Kingfisher */; };
+		DEBFF0952D7481530067CA23 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0942D7481530067CA23 /* APIConfiguration.swift */; };
+		DEBFF0982D74828A0067CA23 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0972D74828A0067CA23 /* AppDependencyContainer.swift */; };
+		DEBFF09C2D7483540067CA23 /* ImageSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF09B2D7483540067CA23 /* ImageSearchViewModel.swift */; };
+		DEBFF09E2D7484900067CA23 /* ImageSearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF09D2D7484900067CA23 /* ImageSearchAssembly.swift */; };
+		DEBFF0A02D7484DA0067CA23 /* ImageSearchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF09F2D7484DA0067CA23 /* ImageSearchModule.swift */; };
+		DEBFF0A32D7484FC0067CA23 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0A22D7484FC0067CA23 /* FeatureModule.swift */; };
+		DEBFF0A62D748E500067CA23 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0A52D748E500067CA23 /* ImageRepository.swift */; };
+		DEBFF0A92D7490610067CA23 /* ImagePairModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0A82D7490610067CA23 /* ImagePairModel.swift */; };
+		DEBFF0AB2D74908E0067CA23 /* ImageSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0AA2D74908E0067CA23 /* ImageSearchModel.swift */; };
+		DEBFF0AE2D7492F00067CA23 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0AD2D7492F00067CA23 /* ImageCollectionViewCell.swift */; };
+		DEBFF0B02D7494300067CA23 /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0AF2D7494300067CA23 /* RepositoryAssembly.swift */; };
+		DEBFF0B22D7494760067CA23 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0B12D7494760067CA23 /* ServiceAssembly.swift */; };
+		DEBFF0B42D7497BF0067CA23 /* ImageSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0B32D7497BF0067CA23 /* ImageSearchRouter.swift */; };
+		DEBFF0B72D7498180067CA23 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0B62D7498180067CA23 /* ImagePreviewViewController.swift */; };
+		DEBFF0B92D74981C0067CA23 /* ImagePreviewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0B82D74981C0067CA23 /* ImagePreviewAssembly.swift */; };
+		DEBFF0BB2D7498220067CA23 /* ImagePreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0BA2D7498220067CA23 /* ImagePreviewModel.swift */; };
+		DEBFF0BD2D7498280067CA23 /* ImagePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0BC2D7498280067CA23 /* ImagePreviewViewModel.swift */; };
+		DEBFF0BF2D7498890067CA23 /* ImagePreviewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0BE2D7498890067CA23 /* ImagePreviewModule.swift */; };
+		DEBFF0C12D749EAB0067CA23 /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0C02D749EAB0067CA23 /* ImageCacheService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +49,26 @@
 		DEBFF06F2D7478E60067CA23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBFF0712D7478E60067CA23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBFF0782D747BDA0067CA23 /* ImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDTO.swift; sourceTree = "<group>"; };
+		DEBFF07B2D747DC70067CA23 /* ImageFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetchService.swift; sourceTree = "<group>"; };
+		DEBFF0942D7481530067CA23 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		DEBFF0972D74828A0067CA23 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		DEBFF09B2D7483540067CA23 /* ImageSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewModel.swift; sourceTree = "<group>"; };
+		DEBFF09D2D7484900067CA23 /* ImageSearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchAssembly.swift; sourceTree = "<group>"; };
+		DEBFF09F2D7484DA0067CA23 /* ImageSearchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchModule.swift; sourceTree = "<group>"; };
+		DEBFF0A22D7484FC0067CA23 /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
+		DEBFF0A52D748E500067CA23 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		DEBFF0A82D7490610067CA23 /* ImagePairModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePairModel.swift; sourceTree = "<group>"; };
+		DEBFF0AA2D74908E0067CA23 /* ImageSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchModel.swift; sourceTree = "<group>"; };
+		DEBFF0AD2D7492F00067CA23 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEBFF0AF2D7494300067CA23 /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		DEBFF0B12D7494760067CA23 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		DEBFF0B32D7497BF0067CA23 /* ImageSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchRouter.swift; sourceTree = "<group>"; };
+		DEBFF0B62D7498180067CA23 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		DEBFF0B82D74981C0067CA23 /* ImagePreviewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewAssembly.swift; sourceTree = "<group>"; };
+		DEBFF0BA2D7498220067CA23 /* ImagePreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewModel.swift; sourceTree = "<group>"; };
+		DEBFF0BC2D7498280067CA23 /* ImagePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewModel.swift; sourceTree = "<group>"; };
+		DEBFF0BE2D7498890067CA23 /* ImagePreviewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewModule.swift; sourceTree = "<group>"; };
+		DEBFF0C02D749EAB0067CA23 /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBFF08A2D747FD60067CA23 /* SnapKit in Frameworks */,
+				DEBFF0852D747FCD0067CA23 /* Swinject in Frameworks */,
+				DEBFF0872D747FCD0067CA23 /* Swinject-Dynamic in Frameworks */,
+				DEBFF08C2D747FD60067CA23 /* SnapKit-Dynamic in Frameworks */,
+				DEBFF08F2D747FF10067CA23 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +106,17 @@
 		DEBFF0622D7478E50067CA23 /* SpeakAppTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				DEBFF0AC2D7492E20067CA23 /* Cells */,
+				DEBFF0A72D7490540067CA23 /* Models */,
+				DEBFF0A42D748E400067CA23 /* Repositories */,
+				DEBFF0A12D7484F60067CA23 /* FeatureModule */,
+				DEBFF0992D7483440067CA23 /* Modules */,
+				DEBFF0962D7482820067CA23 /* DI */,
+				DEBFF0932D7481490067CA23 /* Configuration */,
+				DEBFF07A2D747DB20067CA23 /* Services */,
 				DEBFF0772D747BCC0067CA23 /* DTO */,
 				DEBFF0632D7478E50067CA23 /* AppDelegate.swift */,
 				DEBFF0652D7478E50067CA23 /* SceneDelegate.swift */,
-				DEBFF0672D7478E50067CA23 /* ImageSearchViewController.swift */,
 				DEBFF06C2D7478E60067CA23 /* Assets.xcassets */,
 				DEBFF06E2D7478E60067CA23 /* LaunchScreen.storyboard */,
 				DEBFF0712D7478E60067CA23 /* Info.plist */,
@@ -73,6 +130,99 @@
 				DEBFF0782D747BDA0067CA23 /* ImageDTO.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		DEBFF07A2D747DB20067CA23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF07B2D747DC70067CA23 /* ImageFetchService.swift */,
+				DEBFF0C02D749EAB0067CA23 /* ImageCacheService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEBFF0932D7481490067CA23 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0942D7481530067CA23 /* APIConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DEBFF0962D7482820067CA23 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0972D74828A0067CA23 /* AppDependencyContainer.swift */,
+				DEBFF0AF2D7494300067CA23 /* RepositoryAssembly.swift */,
+				DEBFF0B12D7494760067CA23 /* ServiceAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		DEBFF0992D7483440067CA23 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0B52D7497F80067CA23 /* ImagePreview */,
+				DEBFF09A2D7483480067CA23 /* ImageSearch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DEBFF09A2D7483480067CA23 /* ImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0672D7478E50067CA23 /* ImageSearchViewController.swift */,
+				DEBFF09B2D7483540067CA23 /* ImageSearchViewModel.swift */,
+				DEBFF09D2D7484900067CA23 /* ImageSearchAssembly.swift */,
+				DEBFF09F2D7484DA0067CA23 /* ImageSearchModule.swift */,
+				DEBFF0AA2D74908E0067CA23 /* ImageSearchModel.swift */,
+				DEBFF0B32D7497BF0067CA23 /* ImageSearchRouter.swift */,
+			);
+			path = ImageSearch;
+			sourceTree = "<group>";
+		};
+		DEBFF0A12D7484F60067CA23 /* FeatureModule */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0A22D7484FC0067CA23 /* FeatureModule.swift */,
+			);
+			path = FeatureModule;
+			sourceTree = "<group>";
+		};
+		DEBFF0A42D748E400067CA23 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0A52D748E500067CA23 /* ImageRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DEBFF0A72D7490540067CA23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0A82D7490610067CA23 /* ImagePairModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEBFF0AC2D7492E20067CA23 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0AD2D7492F00067CA23 /* ImageCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEBFF0B52D7497F80067CA23 /* ImagePreview */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFF0B62D7498180067CA23 /* ImagePreviewViewController.swift */,
+				DEBFF0B82D74981C0067CA23 /* ImagePreviewAssembly.swift */,
+				DEBFF0BA2D7498220067CA23 /* ImagePreviewModel.swift */,
+				DEBFF0BC2D7498280067CA23 /* ImagePreviewViewModel.swift */,
+				DEBFF0BE2D7498890067CA23 /* ImagePreviewModule.swift */,
+			);
+			path = ImagePreview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +241,13 @@
 			dependencies = (
 			);
 			name = SpeakAppTestTask;
+			packageProductDependencies = (
+				DEBFF0842D747FCD0067CA23 /* Swinject */,
+				DEBFF0862D747FCD0067CA23 /* Swinject-Dynamic */,
+				DEBFF0892D747FD60067CA23 /* SnapKit */,
+				DEBFF08B2D747FD60067CA23 /* SnapKit-Dynamic */,
+				DEBFF08E2D747FF10067CA23 /* Kingfisher */,
+			);
 			productName = SpeakAppTestTask;
 			productReference = DEBFF0602D7478E50067CA23 /* SpeakAppTestTask.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +276,11 @@
 				Base,
 			);
 			mainGroup = DEBFF0572D7478E50067CA23;
+			packageReferences = (
+				DEBFF0832D747FCD0067CA23 /* XCRemoteSwiftPackageReference "Swinject" */,
+				DEBFF0882D747FD60067CA23 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DEBFF08D2D747FF10067CA23 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DEBFF0612D7478E50067CA23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,9 +307,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBFF0B42D7497BF0067CA23 /* ImageSearchRouter.swift in Sources */,
+				DEBFF09E2D7484900067CA23 /* ImageSearchAssembly.swift in Sources */,
+				DEBFF0C12D749EAB0067CA23 /* ImageCacheService.swift in Sources */,
+				DEBFF0B92D74981C0067CA23 /* ImagePreviewAssembly.swift in Sources */,
 				DEBFF0682D7478E50067CA23 /* ImageSearchViewController.swift in Sources */,
+				DEBFF0A32D7484FC0067CA23 /* FeatureModule.swift in Sources */,
+				DEBFF0BD2D7498280067CA23 /* ImagePreviewViewModel.swift in Sources */,
+				DEBFF0B02D7494300067CA23 /* RepositoryAssembly.swift in Sources */,
 				DEBFF0642D7478E50067CA23 /* AppDelegate.swift in Sources */,
+				DEBFF0A02D7484DA0067CA23 /* ImageSearchModule.swift in Sources */,
+				DEBFF0BB2D7498220067CA23 /* ImagePreviewModel.swift in Sources */,
+				DEBFF0A92D7490610067CA23 /* ImagePairModel.swift in Sources */,
+				DEBFF0AE2D7492F00067CA23 /* ImageCollectionViewCell.swift in Sources */,
+				DEBFF09C2D7483540067CA23 /* ImageSearchViewModel.swift in Sources */,
+				DEBFF0982D74828A0067CA23 /* AppDependencyContainer.swift in Sources */,
+				DEBFF0A62D748E500067CA23 /* ImageRepository.swift in Sources */,
 				DEBFF0662D7478E50067CA23 /* SceneDelegate.swift in Sources */,
+				DEBFF0BF2D7498890067CA23 /* ImagePreviewModule.swift in Sources */,
+				DEBFF0B72D7498180067CA23 /* ImagePreviewViewController.swift in Sources */,
+				DEBFF0952D7481530067CA23 /* APIConfiguration.swift in Sources */,
+				DEBFF0AB2D74908E0067CA23 /* ImageSearchModel.swift in Sources */,
+				DEBFF0B22D7494760067CA23 /* ServiceAssembly.swift in Sources */,
+				DEBFF07C2D747DC70067CA23 /* ImageFetchService.swift in Sources */,
 				DEBFF0792D747BDA0067CA23 /* ImageDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +479,6 @@
 				INFOPLIST_FILE = SpeakAppTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +506,6 @@
 				INFOPLIST_FILE = SpeakAppTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +543,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEBFF0832D747FCD0067CA23 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		DEBFF0882D747FD60067CA23 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		DEBFF08D2D747FF10067CA23 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEBFF0842D747FCD0067CA23 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEBFF0832D747FCD0067CA23 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		DEBFF0862D747FCD0067CA23 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEBFF0832D747FCD0067CA23 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+		DEBFF0892D747FD60067CA23 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEBFF0882D747FD60067CA23 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DEBFF08B2D747FD60067CA23 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEBFF0882D747FD60067CA23 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		DEBFF08E2D747FF10067CA23 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEBFF08D2D747FF10067CA23 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEBFF0582D7478E50067CA23 /* Project object */;
 }
