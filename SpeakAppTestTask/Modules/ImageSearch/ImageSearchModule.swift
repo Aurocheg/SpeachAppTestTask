@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol ImageSearchModuleInput {
-    func updateQuery(_ query: String)
-    func loadMoreResults()
-}
-
 final class ImageSearchModuleOutput: FeatureModuleOutput {
     var viewModel: ImageSearchModuleInput
 

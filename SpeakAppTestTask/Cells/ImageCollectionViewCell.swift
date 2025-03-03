@@ -38,7 +38,7 @@ final class ImageCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var stackView: UIStackView = {
+    private lazy var stackView = {
         let stackView = UIStackView(arrangedSubviews: [firstImageView, secondImageView])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
@@ -46,7 +46,7 @@ final class ImageCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
-    private lazy var labelStackView: UIStackView = {
+    private lazy var labelStackView = {
         let stackView = UIStackView(arrangedSubviews: [firstLabel, secondLabel])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
@@ -54,7 +54,7 @@ final class ImageCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
-    private lazy var mainStack: UIStackView = {
+    private lazy var mainStack = {
         let stackView = UIStackView(arrangedSubviews: [stackView, labelStackView])
         stackView.axis = .vertical
         stackView.spacing = 8

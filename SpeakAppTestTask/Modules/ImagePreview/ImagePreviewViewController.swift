@@ -13,13 +13,13 @@ final class ImagePreviewViewController: UIViewController {
     private let viewModel: ImagePreviewViewModel
     private var cancellables = Set<AnyCancellable>()
     
-    lazy var imageView: UIImageView = {
+    private let imageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
-    lazy var closeButton: UIButton = {
+    private lazy var closeButton = {
         let button = UIButton(type: .system)
         button.setTitle("Close", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -27,7 +27,7 @@ final class ImagePreviewViewController: UIViewController {
         return button
     }()
     
-    lazy var toggleButton: UIButton = {
+    private lazy var toggleButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Switch Image", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -82,10 +82,10 @@ final class ImagePreviewViewController: UIViewController {
     }
     
     @objc private func closeTapped() {
-        dismiss(animated: true, completion: nil)
+        viewModel.closeInitiated(viewController: self)
     }
     
     @objc private func toggleImage() {
-        viewModel.toggleImage()
+        viewModel.toggleImageInitiated()
     }
 }

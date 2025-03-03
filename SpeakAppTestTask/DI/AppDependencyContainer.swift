@@ -10,7 +10,7 @@ import Swinject
 
 final class AppDependencyContainer {
     static let shared = AppDependencyContainer()
-    let container: Container
+    private let container: Container
     
     private init() {
         container = Container()

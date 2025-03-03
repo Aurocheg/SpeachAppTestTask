@@ -13,7 +13,7 @@ final class ImageSearchViewController: UIViewController {
     private var viewModel: ImageSearchViewModel
     private var cancellables = Set<AnyCancellable>()
     
-    private lazy var searchTextField: UITextField = {
+    private lazy var searchTextField = {
         let textField = UITextField()
         textField.placeholder = "Enter search text"
         textField.borderStyle = .roundedRect
@@ -21,12 +21,12 @@ final class ImageSearchViewController: UIViewController {
         return textField
     }()
     
-    private lazy var collectionView: UICollectionView = {
+    private lazy var collectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: view.frame.width - 20, height: 200)
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: "ImageCell")
+        collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: Const.imageCollectionCell)
         collectionView.delegate = self
         collectionView.dataSource = self
         return collectionView
@@ -84,14 +84,24 @@ extension ImageSearchViewController: UICollectionViewDelegate {
 
 extension ImageSearchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.items.count
+        viewModel.items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as? ImageCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Const.imageCollectionCell, for: indexPath) as? ImageCollectionViewCell else {
             return UICollectionViewCell()
         }
         cell.configure(with: viewModel.items[indexPath.item])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.item == viewModel.items.count - 1 {
+            viewModel.loadMoreResults()
+        }
+    }
+}
+
+private enum Const {
+    static let imageCollectionCell = "imageCollectionCell"
 }

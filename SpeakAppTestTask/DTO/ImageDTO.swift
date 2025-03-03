@@ -12,6 +12,6 @@ struct ImageDTO: Decodable {
     let tags: String
 }
 
-struct PixabayResponse: Decodable {
+struct PixabayResponseDTO: Decodable {
     let hits: [ImageDTO]
 }

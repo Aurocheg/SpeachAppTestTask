@@ -25,6 +25,6 @@ final class ImageSearchDefaultModel: ImageSearchModel {
     }
     
     func clearImageCacheIfNeeded() {
-        repository.clearImageCacheIfNeeded()
+        repository.clearImageCacheIfNeeded(maxMegabytesInMemory: 200)
     }
 }

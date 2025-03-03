@@ -38,6 +38,7 @@
 		DEBFF0BD2D7498280067CA23 /* ImagePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0BC2D7498280067CA23 /* ImagePreviewViewModel.swift */; };
 		DEBFF0BF2D7498890067CA23 /* ImagePreviewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0BE2D7498890067CA23 /* ImagePreviewModule.swift */; };
 		DEBFF0C12D749EAB0067CA23 /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0C02D749EAB0067CA23 /* ImageCacheService.swift */; };
+		DEBFF0C32D75C4EB0067CA23 /* ImagePreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFF0C22D75C4EB0067CA23 /* ImagePreviewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		DEBFF0BC2D7498280067CA23 /* ImagePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewModel.swift; sourceTree = "<group>"; };
 		DEBFF0BE2D7498890067CA23 /* ImagePreviewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewModule.swift; sourceTree = "<group>"; };
 		DEBFF0C02D749EAB0067CA23 /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
+		DEBFF0C22D75C4EB0067CA23 /* ImagePreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBFF0B62D7498180067CA23 /* ImagePreviewViewController.swift */,
+				DEBFF0C22D75C4EB0067CA23 /* ImagePreviewRouter.swift */,
 				DEBFF0B82D74981C0067CA23 /* ImagePreviewAssembly.swift */,
 				DEBFF0BA2D7498220067CA23 /* ImagePreviewModel.swift */,
 				DEBFF0BC2D7498280067CA23 /* ImagePreviewViewModel.swift */,
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBFF0C32D75C4EB0067CA23 /* ImagePreviewRouter.swift in Sources */,
 				DEBFF0B42D7497BF0067CA23 /* ImageSearchRouter.swift in Sources */,
 				DEBFF09E2D7484900067CA23 /* ImageSearchAssembly.swift in Sources */,
 				DEBFF0C12D749EAB0067CA23 /* ImageCacheService.swift in Sources */,

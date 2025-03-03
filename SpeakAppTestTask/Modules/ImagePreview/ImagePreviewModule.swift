@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol ImagePreviewModuleInput {
-   func toggleImage()
-}
-
 final class ImagePreviewModuleOutput: FeatureModuleOutput {
     var viewModel: ImagePreviewModuleInput
 

@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol ImagePreviewModelProtocol {
+protocol ImagePreviewModel {
     var firstImageURL: String { get }
     var secondImageURL: String { get }
 }
 
-class ImagePreviewModel: ImagePreviewModelProtocol {
+struct ImagePreviewDefaultModel: ImagePreviewModel {
     let firstImageURL: String
     let secondImageURL: String
     

@@ -9,19 +9,19 @@ import Kingfisher
 import Foundation
 
 protocol ImageCacheService: AnyObject {
-    func clearCacheIfNeeded()
+    func clearCacheIfNeeded(maxMegabytesInMemory: Double)
 }
 
 final class ImageCacheDefaultService: ImageCacheService {
     private let cache = KingfisherManager.shared.cache
-
-    func clearCacheIfNeeded() {
+    
+    func clearCacheIfNeeded(maxMegabytesInMemory: Double) {
         let usedMemoryMB = getUsedMemory()
-         
-         if usedMemoryMB > 200 {
-             cache.clearMemoryCache()
-             print("[ImageCacheService] Memory cache cleared due to high RAM usage.")
-         }
+        
+        if usedMemoryMB > maxMegabytesInMemory {
+            cache.clearMemoryCache()
+            print("[ImageCacheService] Memory cache cleared due to high RAM usage.")
+        }
     }
     
     private func getUsedMemory() -> Double {

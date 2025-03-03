@@ -28,7 +28,7 @@ final class ImageFetchDefaultService: ImageFetchService {
         
         return URLSession.shared.dataTaskPublisher(for: requestURL)
             .map { $0.data }
-            .decode(type: PixabayResponse.self, decoder: decoder)
+            .decode(type: PixabayResponseDTO.self, decoder: decoder)
             .map { $0.hits }
             .replaceError(with: [])
             .eraseToAnyPublisher()

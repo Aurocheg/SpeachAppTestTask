@@ -10,7 +10,7 @@ import Combine
 
 protocol ImageRepository: AnyObject {
     func fetchImages(query: String, page: Int) -> AnyPublisher<[ImagePairModel], Never>
-    func clearImageCacheIfNeeded()
+    func clearImageCacheIfNeeded(maxMegabytesInMemory: Double)
 }
 
 final class ImageDefaultRepository: ImageRepository {
@@ -28,12 +28,14 @@ final class ImageDefaultRepository: ImageRepository {
 
         return Publishers.Zip(publisher1, publisher2)
             .map { firstImages, secondImages in
-                zip(firstImages, secondImages).map { ImagePairModel(first: $0, second: $1) }
+                zip(firstImages, secondImages).map {
+                    ImagePairModel(first: $0, second: $1)
+                }
             }
             .eraseToAnyPublisher()
     }
     
-    func clearImageCacheIfNeeded() {
-        cacheService.clearCacheIfNeeded()
+    func clearImageCacheIfNeeded(maxMegabytesInMemory: Double) {
+        cacheService.clearCacheIfNeeded(maxMegabytesInMemory: maxMegabytesInMemory)
     }
 }
